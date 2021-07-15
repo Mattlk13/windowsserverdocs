@@ -1,13 +1,11 @@
 ---
 title: logman create api
-description: Reference topic for the logman create api command, which creates an API-tracing data collector.
-ms.prod: windows-server
-ms.technology: manage-windows-commands
-ms.topic: article
+description: Reference article for the logman create api command, which creates an API-tracing data collector.
+ms.topic: reference
 ms.assetid: 2ecc0a75-2613-464a-8616-c5dc404bb736
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 
@@ -81,4 +79,6 @@ logman create api trace_notepad -exe c:\windows\notepad.exe -exapis kernel32.dll
 
 - [Command-Line Syntax Key](command-line-syntax-key.md)
 
-- [logman](logman.md)
+- [logman update api command](logman-update-api.md)
+
+- [logman command](logman.md)

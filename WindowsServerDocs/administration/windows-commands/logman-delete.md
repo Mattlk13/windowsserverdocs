@@ -1,13 +1,11 @@
 ---
 title: logman delete
-description: Reference topic for the logman delete command, which deletes an existing data collector.
-ms.prod: windows-server
-ms.technology: manage-windows-commands
-ms.topic: article
+description: Reference article for the logman delete command, which deletes an existing data collector.
+ms.topic: reference
 ms.assetid: 8f3b2422-3dce-4fb4-adbb-8536b1d7da2b
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 
@@ -46,4 +44,4 @@ logman delete perf_log
 
 - [Command-Line Syntax Key](command-line-syntax-key.md)
 
-- [logman](logman.md)
+- [logman command](logman.md)

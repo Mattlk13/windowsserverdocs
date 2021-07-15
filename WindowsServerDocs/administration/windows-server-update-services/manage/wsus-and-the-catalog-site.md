@@ -1,20 +1,18 @@
 ---
 title: WSUS and the Catalog Site
 description: Windows Server Update Service (WSUS) topic - How to import hotfixes into WSUS by accessing the Microsoft Update catalog site
-ms.prod: windows-server
-ms.technology: manage-wsus
 ms.topic: article
 ms.assetid: f19a8659-5a96-4fdd-a052-29e4547fe51a
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 # WSUS and the Catalog Site
 
 >Applies To: Windows Server (Semi-Annual Channel), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
 
-The Catalog Site is the Microsoft location from which you can import hotfixes and hardware drivers.
+The [Catalog Site](https://www.catalog.update.microsoft.com) is the Microsoft location from which you can import hotfixes and hardware drivers.
 
 ## The Microsoft Update Catalog Site
 In order to import hotfixes into WSUS, you must access the Microsoft Update Catalog Site from a WSUS computer. Any computer that has the WSUS administrative console installed, whether or not it is a WSUS server, can be used to import hotfixes from the Catalog Site. You must be logged on to the computer as an administrator to import the hotfixes.

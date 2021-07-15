@@ -1,13 +1,11 @@
 ---
 title: logman create alert
-description: Reference topic for the logman create alert command, which creates an alert data collector.
-ms.prod: windows-server
-ms.technology: manage-windows-commands
-ms.topic: article
+description: Reference article for the logman create alert command, which creates an alert data collector.
+ms.topic: reference
 ms.assetid: 93e6fc2b-5bf5-413b-84b4-be8b9dd3a57d
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 
@@ -72,4 +70,6 @@ logman create alert new_alert -th \Processor(_Total)\% Processor time>50
 
 - [Command-Line Syntax Key](command-line-syntax-key.md)
 
-- [logman](logman.md)
+- [logman update alert command](logman-update-alert.md)
+
+- [logman command](logman.md)

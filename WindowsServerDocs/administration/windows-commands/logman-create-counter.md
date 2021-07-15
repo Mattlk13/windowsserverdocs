@@ -1,13 +1,11 @@
 ---
 title: logman create counter
-description: Reference topic for the logman create counter command, which creates a counter data collector.
-ms.prod: windows-server
-ms.technology: manage-windows-commands
-ms.topic: article
+description: Reference article for the logman create counter command, which creates a counter data collector.
+ms.topic: reference
 ms.assetid: 1e214c32-b704-43c1-b548-e1cf43b583c3
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 
@@ -73,4 +71,6 @@ logman create counter perf_log -c \Processor(_Total)\% Processor time -max 10 -r
 
 - [Command-Line Syntax Key](command-line-syntax-key.md)
 
-- [logman](logman.md)
+- [logman update counter command](logman-update-counter.md)
+
+- [logman command](logman.md)

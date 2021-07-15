@@ -1,13 +1,11 @@
 ---
 title: Get started with the Windows Desktop client
 description: Basic information about the Windows Desktop client.
-ms.prod: windows-server
-ms.technology: remote-desktop-services
 ms.topic: article
 author: heidilohr
-manager: lizross
+manager: femila
 ms.author: helohr
-ms.date: 04/28/2020
+ms.date: 09/05/2020
 ms.localizationpriority: medium
 ---
 # Get started with the Windows Desktop client
@@ -18,7 +16,7 @@ You can use the Remote Desktop client for Windows Desktop to access Windows apps
 
 > [!NOTE]
 > - This documentation is not for the Remote Desktop Connection (MSTSC) client that ships with Windows. It's for the new Remote Desktop (MSRDC) client.
-> - This client currently only supports accessing remote apps and desktops from [Windows Virtual Desktop](https://aka.ms/wvd).
+> - This client currently only supports accessing remote apps and desktops from [Azure Virtual Desktop](https://aka.ms/wvd).
 > - Curious about the new releases for the Windows Desktop client? Check out [What's new in the Windows Desktop client](windowsdesktop-whatsnew.md)
 
 ## Install the client
@@ -46,18 +44,32 @@ You can also manually search for new updates for the client:
 
 ## Workspaces
 
-Get the list of managed resources you can access, such as apps and desktops, by subscribing to the Workspace your admin provided you. When you subscribe, the resources become available on your local PC. The Windows Desktop client currently supports resources published from Windows Virtual Desktop.
+Get the list of managed resources you can access, such as apps and desktops, by subscribing to the Workspace your admin provided you. When you subscribe, the resources become available on your local PC. The Windows Desktop client currently supports resources published from Azure Virtual Desktop.
 
 ### Subscribe to a Workspace
 
-1. From the main page of the client, also known as the Connection Center, tap **Subscribe**.
-2. Sign in with your user account when prompted.
-3. The resources will appear in the Connection Center grouped by Workspace.
-
-You can launch resources with one of the following methods:
+There are two ways you can subscribe to a Workspace. The client can try to discover the resources available to you from your work or school account or you can directly specify the URL where your resources are for cases where the client is unable to find them. Once you've subscribed to a Workspace, you can launch resources with one of the following methods:
 
 - Go to the Connection Center and double-click a resource to launch it.
 - You can also go to the Start menu and look for a folder with the Workspace name or enter the resource name in the search bar.
+
+#### Subscribe with a user account
+
+1. From the main page of the client, tap **Subscribe**.
+2. Sign in with your user account when prompted.
+3. The resources will appear in the Connection Center grouped by Workspace.
+
+#### Subscribe with URL
+
+1. From the main page of the client, tap **Subscribe with URL**.
+2. Enter the Workspace URL or your email address:
+   - If you use the **Workspace URL**, use the one your admin gave you. If accessing resources from Azure Virtual Desktop, you can use one of the following URLs:
+     - Azure Virtual Desktop (classic): `https://rdweb.wvd.microsoft.com/api/feeddiscovery/webfeeddiscovery.aspx`
+     - Azure Virtual Desktop: `https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery`
+   - To use **email**, enter your email address. This tells the client to search for a URL associated with your email address if your admin has setup [email discovery](../rds-email-discovery.md).
+3. Tap **Next**.
+4. Sign in with your user account when prompted.
+5. The resources will appear in the Connection Center grouped by Workspace.
 
 ### Workspace details
 
@@ -114,18 +126,17 @@ The client will use the settings configured by your admin unless you turn off th
 - **Resolution** lets you specify the resolution of the remote desktop. The session will retain this resolution for its entire duration. This setting is only available in **Single display** mode and when **Update the resolution on resize** is disabled.
 - **Change the size of the text and apps** specifies the size of the content of the session. This setting only applies when connecting to Windows 8.1 and later or Windows Server 2012 R2 and later. This setting is only available in **Single display** mode and when **Update the resolution on resize** is disabled.
 
-## Provide feedback
+## Give us feedback
 
-Have a feature suggestion or want to report a problem? Tell us using the [Feedback Hub](feedback-hub://?tabid=2&contextid=883). You can also access the Feedback Hub through the client:
+Have a feature suggestion or want to report a problem? Tell us with the [Feedback Hub](https://aka.ms/rddesktopfeedback).
 
-1. From the Connection Center, tap the **Send feedback** option on the command bar at the top of the client to open the Feedback Hub app.
-2. Enter the required information in the **Summary** and **Details** fields. When you're done, tap **Next**.
-3. Select whether it's a **Problem** or **Suggestion**.
-4. Check to see if the category is in **Apps** > **Remote Desktop**. If it is, tap **Next**.
-5. Review the existing feedback topics to see if someone else has reported the same problem. If not, select **Make a new bug**, then tap **Next**.
-6. On the next page, you can give us more information so we can help you solve the problem. You can write more detailed information, submit screenshots, and even create a recording of the problem to show us what happened. To make a recording, select **Start recording**, then do what you did up to the point where the problem happened. When you're done, return to the Feedback Hub and select **Stop recording**.
-7. When you're satisfied with the information, tap **Submit**.
-8. On the "Thank you for your feedback!" page, tap **Share my feedback** to generate a link to your feedback that you can share with others as needed.
+You can also give us feedback by selecting the button that looks like a smiley face emoticon in the client app, as shown in the following image:
+
+> [!div class="mx-imgBorder"]
+> ![A screenshot of the smiley face icon that takes you to the feedback hub.](../media/smiley-face-icon.png)
+
+>[!NOTE]
+>To best help you, we need you to give us as detailed information about the issue as possible. For example, you can include screenshots or a recording of the actions you took leading up to the issue. For more tips about how to provide helpful feedback, see [Feedback](/windows-insider/at-home/feedback#add-new-feedback).
 
 ### Access client logs
 

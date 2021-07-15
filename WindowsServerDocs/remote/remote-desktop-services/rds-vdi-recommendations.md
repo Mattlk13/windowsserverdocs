@@ -1,8 +1,6 @@
 ---
 title: Recommended configuration for VDI desktops
 description: Recommended settings and configuration to minimize overhead for Windows 10 1607 (10.0.1393) desktops used as VDI images
-ms.prod: windows-server
-ms.technology: remote-desktop-services
 ms.author: elizapo
 ms.date: 12/18/2018
 ms.topic: article
@@ -25,7 +23,7 @@ These instructions and recommended settings are relevant to Windows 10 1607 (ver
 > [!NOTE]
 > Any settings not specifically mentioned in this topic can be left at their default values (or set per your requirements and policies) without appreciable impact on VDI functionality.
 
-When you create an image to base the VDI deployment, be sure to use the **Current Branch**. For more information about Current Branch, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx).
+When you create an image to base the VDI deployment, be sure to use the **Current Branch**. For more information about Current Branch, see [Windows 10 release information](/archive/blogs/mniehaus/windows-10-1607-keeping-apps-from-coming-back-when-deploying-the-feature-update).
 
 ## Creating the Windows 10 image
 The first step is to install a reference image of Windows 10 1607 (version 10.0.1393) on either a physical  or virtual machine. Installing to a virtual machine is easy and allows you to save versions of the virtual hard-disk (VHD) file, in case you want to roll back to an earlier version.
@@ -289,7 +287,7 @@ In the **Browsing history** area, select the check box for **Delete browsing his
 Push the Windows button and type *control panel*. In the results that return, click **Control Panel**. In Control Panel, click **Power Options** to open the Power Options control panel. In the **Choose or customize a power plan** area, click the down arrow for **Show additional plans**, and then select the radio button for **High performance**. This setting will have very little impact on the VDI host.
 
 ### System
-Push the Windows button and type *control panel*. In the results that return, click **Control Panel**. In Control Panel, click **System** to open the System control panel. In the left pane, click **Advanced system settings**. In the dialog that opens, click the **Advanced** tab. In the **Performance** area, click the **Settings** button, then on **Visual Effects** tab in the dialog that opens, select the **Adjust for best performance** radio button. Click **OK** to save and exit.
+Push the Windows button and type *control panel*. In the results that return, click **Control Panel**. In Control Panel, click **System** to open the System control panel. In the right pane, click **Advanced system settings**. In the dialog that opens, click the **Advanced** tab. In the **Performance** area, click the **Settings** button, then on **Visual Effects** tab in the dialog that opens, select the **Adjust for best performance** radio button. Click **OK** to save and exit.
 
 ## Group Policy settings
 
@@ -329,7 +327,7 @@ Collapse **Network**, and then expand **System**. Adjust each setting as follows
 ||Prevent Windows from sending an error report when a device driver requests additional software during installation|Enabled|
 ||Turn off "Found New Hardware" balloons during device installation|Enabled|
 
-Expand **Filesystem**, double-click **NTFS**, double-click **Short name creation options**, select the radio button for **Enabled**, and then use the **Options** pull-down menu to select **Enable on all volumes**. Click the **OK** button to save.
+Expand **Filesystem**, double-click **NTFS**, double-click **Short name creation options**, select the radio button for **Enabled**, and then use the **Options** pull-down menu to select **Disable on all volumes**. Click the **OK** button to save.
 
 Collapse **Filesystem**, and then expand **Internet Communication Management**. Click **Internet Communication settings**. Adjust each setting as follows by double-clicking it, then selecting the radio button for **Enabled**, and then clicking the **OK** button:
 
@@ -561,5 +559,5 @@ To remove the OneDrive app:
 4. Click or tap **Turn system icons on or off**, and then turn each system icon on or off as you prefer for the image.
 
 ### Delete downloaded updates
-1. Using File Explorer, navigate to **C:\Windows\Software Distribution\Download**.
+1. Using File Explorer, navigate to **C:\Windows\SoftwareDistribution\Download**.
 2. Delete all files and folders in that directory.

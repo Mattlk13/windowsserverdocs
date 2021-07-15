@@ -1,13 +1,11 @@
 ---
 title: logman create cfg
-description: Reference topic for the logman create cfg command, which creates a configuration data collector.
-ms.prod: windows-server
-ms.technology: manage-windows-commands
-ms.topic: article
+description: Reference article for the logman create cfg command, which creates a configuration data collector.
+ms.topic: reference
 ms.assetid: bfc87093-3ff5-4e19-aa93-d185fb8e2239
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 
@@ -73,4 +71,6 @@ logman create cfg cfg_log -mgt root\wmi:select * FROM MSNdis_Vendordriverversion
 
 - [Command-Line Syntax Key](command-line-syntax-key.md)
 
-- [logman](logman.md)
+- [logman update cfg command](logman-update-cfg.md)
+
+- [logman command](logman.md)

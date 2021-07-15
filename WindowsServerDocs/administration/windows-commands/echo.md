@@ -1,13 +1,11 @@
 ---
 title: echo
-description: Reference topic for the echo command, which displays messages or turns on or off the command echoing feature.
-ms.prod: windows-server
-ms.technology: manage-windows-commands
-ms.topic: article
+description: Reference article for the echo command, which displays messages or turns on or off the command echoing feature.
+ms.topic: reference
 ms.assetid: fb9fcd0f-5e73-4504-aa95-78204e1a79d3
-author: coreyp-at-msft
-ms.author: coreyp
-manager: dongill
+ms.author: jgerend
+author: JasonGerend
+manager: mtillman
 ms.date: 10/16/2017
 ---
 
@@ -26,7 +24,7 @@ echo [on | off]
 
 | Parameter | Description |
 | --------- | ----------- |
-| [on \ | off] | Turns on or off the command echoing feature. Command echoing is on by default. |
+| [on \| off] | Turns on or off the command echoing feature. Command echoing is on by default. |
 | `<message>` | Specifies the text to display on the screen. |
 | /? | Displays help at the command prompt. |
 
